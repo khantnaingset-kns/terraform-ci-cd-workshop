@@ -8,7 +8,7 @@
 
 # Overview
 
-Whole infrastructure is hand code by scratch. Modules are split for reusability and easier management. Initially planned to use `.tfvars` but due to the nature of project is demonstration, I reduced the environment complexity by not using `.tfvars` and hand code almost everything inside [`variables.tf`](http://variables.tf) and `locals.tf`
+Whole infrastructure is hand code by scratch. Modules are split for reusability and easier management. Initially planned to use `.tfvars` but due to the nature of project is demonstration, I reduced the environment complexity by not using `.tfvars` and hand code almost everything inside [`variables.tf`] and `locals.tf`
 
 # Modules
 
@@ -17,7 +17,7 @@ There is two modules
 - Networking
 - Compute
 
-Initially, I was planned to separate more modules, but to reduce modules verbosity, I only separate two and split layer inside the modules like `[securitygroups.tf](http://securitygroups.tf)` and [`keypar.tf`](http://keypar.tf).
+Initially, I was planned to separate more modules, but to reduce modules verbosity, I only separate two and split layer inside the modules like `[securitygroups.tf]` and [`keypar.tf`].
 
 # Setup and Run
 
