@@ -8,7 +8,7 @@
 
 # Overview
 
-Whole infrastructure is hand code by scratch. Modules are split for reusability and easier management. Initially planned to use `.tfvars` but due to the nature of project is demonstration, I reduced the environment complexity by not using `.tfvars` and hand code almost everything inside [`variables.tf`] and `locals.tf`
+Whole infrastructure is hand code by scratch. Modules are split for reusability and easier management. Initially planned to use `.tfvars` but due to the nature of project is demonstration, I reduced the environment complexity by not using `.tfvars` and hand code almost everything inside [`variables.tf`] and `locals.tf`, I know this is bad practices, but since this is demo, I guess this won't be a problem.
 
 # Modules
 
