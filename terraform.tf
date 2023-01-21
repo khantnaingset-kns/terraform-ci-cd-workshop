@@ -11,4 +11,11 @@ terraform {
       version = "~> 2.0"
     }
   }
+
+  backend "s3" {
+    bucket = "nzoun-terraform-bucket"
+    key    = "nzoun"
+    region = "us-east-1"
+  }
+
 }
