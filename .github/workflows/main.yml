@@ -24,7 +24,7 @@ jobs:
       run:
         shell: bash
         # We keep Terraform files in the terraform directory.
-        working-directory: ./terraform
+        working-directory: ./
 
     steps:
       - name: Checkout the repository to the runner
@@ -37,7 +37,7 @@ jobs:
 
       - name: Terraform init
         id: init
-        run: terraform init -backend-config="bucket=$BUCKET_TF_STATE"
+        run: terraform init
 
       - name: Terraform format
         id: fmt
