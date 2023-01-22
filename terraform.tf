@@ -13,9 +13,12 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "nzoun-terraform-bucket"
-    key    = "nzoun"
-    region = "us-east-1"
+    encrypt        = true
+    dynamodb_table = "terraform_state_lock_db"
+    bucket         = "nzoun-terraform-bucket"
+    key            = "nzoun"
+    region         = "us-east-1"
   }
+
 
 }
